@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "blink.elf"
+			"path" : "DiskSat.elf"
 		}
 	],
 	"backtrace" : 1,
@@ -312,7 +312,7 @@
 				},
 				{
 					"backtrace" : 9,
-					"define" : "PICO_TARGET_NAME=\"blink\""
+					"define" : "PICO_TARGET_NAME=\"DiskSat\""
 				},
 				{
 					"backtrace" : 5,
@@ -872,7 +872,7 @@
 				},
 				{
 					"backtrace" : 9,
-					"define" : "PICO_TARGET_NAME=\"blink\""
+					"define" : "PICO_TARGET_NAME=\"DiskSat\""
 				},
 				{
 					"backtrace" : 5,
@@ -1404,7 +1404,7 @@
 				},
 				{
 					"backtrace" : 9,
-					"define" : "PICO_TARGET_NAME=\"blink\""
+					"define" : "PICO_TARGET_NAME=\"DiskSat\""
 				},
 				{
 					"backtrace" : 5,
@@ -1700,7 +1700,7 @@
 			"id" : "bs2_default_library::@9e89cb6b53d747b62405"
 		}
 	],
-	"id" : "blink::@6890427a1f51a3e7e1df",
+	"id" : "DiskSat::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -1715,7 +1715,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "-Wl,-Map=/home/pico2/DiskSat/build/blink.elf.map",
+				"fragment" : "-Wl,-Map=/home/pico2/DiskSat/build/DiskSat.elf.map",
 				"role" : "flags"
 			},
 			{
@@ -2331,8 +2331,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "blink",
-	"nameOnDisk" : "blink.elf",
+	"name" : "DiskSat",
+	"nameOnDisk" : "DiskSat.elf",
 	"paths" : 
 	{
 		"build" : ".",
@@ -2415,7 +2415,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "blink.c",
+			"path" : "main.c",
 			"sourceGroupIndex" : 0
 		},
 		{

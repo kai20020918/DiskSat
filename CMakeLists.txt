@@ -14,7 +14,7 @@ set(CMAKE_C_COMPILER_WORKS 1)
 set(CMAKE_CXX_COMPILER_WORKS 1)
 # set(PICO_PLATFORM rp2350) # これを project() 
 # 3. プロジェクトの宣言 (必須)
-project(blink C CXX ASM)
+project(DiskSat C CXX ASM)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
@@ -24,20 +24,20 @@ pico_sdk_init()
 
 # --- ここから既存のコード ---
 
-add_executable(blink
-    blink.c
+add_executable(DiskSat
+    main.c
 )
 
 # pull in common dependencies
-target_link_libraries(blink pico_stdlib)
+target_link_libraries(DiskSat pico_stdlib)
 
 if (PICO_CYW43_SUPPORTED)
-    target_link_libraries(blink pico_cyw43_arch_none)
+    target_link_libraries(DiskSat pico_cyw43_arch_none)
 endif()
 
 # create map/bin/hex file etc.
-pico_add_extra_outputs(blink)
+pico_add_extra_outputs(DiskSat)
 
 # add url via pico_set_program_url
 # ※この関数はSDK標準ではない場合があるため、エラーが出るならコメントアウトしてください
-# example_auto_set_url(blink)
+# example_auto_set_url(DiskSat)

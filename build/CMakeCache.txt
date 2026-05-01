@@ -171,7 +171,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=blink
+CMAKE_PROJECT_NAME:STATIC=DiskSat
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/arm-none-eabi-ranlib
@@ -246,6 +246,15 @@ DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 
 //Doxygen documentation generation tool (https://www.doxygen.nl)
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+
+//Value Computed by CMake
+DiskSat_BINARY_DIR:STATIC=/home/pico2/DiskSat/build
+
+//Value Computed by CMake
+DiskSat_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+DiskSat_SOURCE_DIR:STATIC=/home/pico2/DiskSat
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/pico2/DiskSat/build/_deps

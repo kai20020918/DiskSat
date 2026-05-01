@@ -1,4 +1,4 @@
-/home/pico2/DiskSat/build/CMakeFiles/blink.dir
+/home/pico2/DiskSat/build/CMakeFiles/DiskSat.dir
 /home/pico2/DiskSat/build/CMakeFiles/edit_cache.dir
 /home/pico2/DiskSat/build/CMakeFiles/rebuild_cache.dir
 /home/pico2/DiskSat/build/pico-sdk/CMakeFiles/edit_cache.dir

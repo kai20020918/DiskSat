@@ -1,3 +1,9 @@
+// main.c 
+//　IMU　I2C　GPIO4 I2C SDA
+//　IMU　I2C　GPIO5 I2C SCL
+//　出力　UART GPIO0 UART TX
+//　出力　UART GPIO1 UART RX
+
 #include "pico/stdlib.h"
 
 // 使用するGPIOピンの定義

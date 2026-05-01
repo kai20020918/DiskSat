@@ -975,7 +975,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "blink"
+			"value" : "DiskSat"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1316,6 +1316,42 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
+		},
+		{
+			"name" : "DiskSat_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/pico2/DiskSat/build"
+		},
+		{
+			"name" : "DiskSat_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "DiskSat_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/pico2/DiskSat"
 		},
 		{
 			"name" : "FAMILY_MCUS",

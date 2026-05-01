@@ -1288,7 +1288,7 @@
 					[
 						0
 					],
-					"name" : "blink",
+					"name" : "DiskSat",
 					"targetIndexes" : 
 					[
 						0
@@ -1417,9 +1417,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "blink::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-blink-Debug-4d7b9da63dbb766d5bb5.json",
-					"name" : "blink",
+					"id" : "DiskSat::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DiskSat-Debug-61b6f553f4eafedfb43e.json",
+					"name" : "DiskSat",
 					"projectIndex" : 0
 				},
 				{

@@ -2771,7 +2771,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
 .flash_begin    0x10000000        0x0
                 0x10000000                        __flash_binary_start = .
 
-.text           0x10000000     0x3378
+.text           0x10000000     0x3480
                 0x10000000                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000000      0x124 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -2866,375 +2866,376 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
                 0x10000274       0x70 CMakeFiles/DiskSat.dir/main.c.o
  .text.uart_puts
                 0x100002e4       0x54 CMakeFiles/DiskSat.dir/main.c.o
- .text.read_tmp1075
-                0x10000338       0x7c CMakeFiles/DiskSat.dir/main.c.o
-                0x10000338                read_tmp1075
- .text.main     0x100003b4       0xb4 CMakeFiles/DiskSat.dir/main.c.o
-                0x100003b4                main
+ .text.ak09918_init
+                0x10000338       0xb8 CMakeFiles/DiskSat.dir/main.c.o
+                0x10000338                ak09918_init
+ .text.main     0x100003f0      0x17c CMakeFiles/DiskSat.dir/main.c.o
+                0x100003f0                main
  .text.gpio_set_function
-                0x10000468       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x10000468                gpio_set_function
+                0x1000056c       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x1000056c                gpio_set_function
  .text.gpio_set_pulls
-                0x100004a0       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x100004a0                gpio_set_pulls
- .text.panic    0x100004d8       0x30 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x100004d8                panic
+                0x100005a4       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100005a4                gpio_set_pulls
+ .text.panic    0x100005dc       0x30 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x100005dc                panic
  .text.hw_claim_lock
-                0x10000508       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000508                hw_claim_lock
+                0x1000060c       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x1000060c                hw_claim_lock
  .text.hw_claim_unlock
-                0x1000052c       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x1000052c                hw_claim_unlock
+                0x10000630       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000630                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x10000540       0x32 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000540                hw_claim_or_assert
- *fill*         0x10000572        0x2 
+                0x10000644       0x32 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000644                hw_claim_or_assert
+ *fill*         0x10000676        0x2 
  .text.next_striped_spin_lock_num
-                0x10000574       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10000574                next_striped_spin_lock_num
+                0x10000678       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10000678                next_striped_spin_lock_num
  .text.spinlock_set_extexclall
-                0x10000590        0xe CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- *fill*         0x1000059e        0x2 
+                0x10000694        0xe CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ *fill*         0x100006a2        0x2 
  .text.spin_locks_reset
-                0x100005a0       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x100005a0                spin_locks_reset
+                0x100006a4       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x100006a4                spin_locks_reset
  .text.set_raw_irq_handler_and_unlock
-                0x100005bc       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100006c0       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .text.nvic_ipr0
-                0x100005e0        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100006e4        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .text.runtime_init_per_core_irq_priorities
-                0x100005e8       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100005e8                runtime_init_per_core_irq_priorities
+                0x100006ec       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100006ec                runtime_init_per_core_irq_priorities
  .text.irq_set_mask_n_enabled
-                0x10000604       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000604                irq_set_mask_n_enabled
+                0x10000708       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000708                irq_set_mask_n_enabled
  .text.irq_set_enabled
-                0x10000624       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000624                irq_set_enabled
+                0x10000728       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000728                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x10000638       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000638                irq_get_vtable_handler
+                0x1000073c       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000073c                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000648       0x60 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000648                irq_set_exclusive_handler
+                0x1000074c       0x60 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000074c                irq_set_exclusive_handler
  .text.lock_init
-                0x100006a8        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x100006a8                lock_init
+                0x100007ac        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x100007ac                lock_init
  .text.mutex_init
-                0x100006b4       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100006b4                mutex_init
+                0x100007b8       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100007b8                mutex_init
  .text.recursive_mutex_init
-                0x100006ce       0x1e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100006ce                recursive_mutex_init
+                0x100007d2       0x1e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100007d2                recursive_mutex_init
  .text.runtime_init_mutex
-                0x100006ec       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100006ec                runtime_init_mutex
+                0x100007f0       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100007f0                runtime_init_mutex
  .text.ta_from_current_irq
-                0x10000738       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x1000083c       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.ta_set_timeout
-                0x1000075c       0x2a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000860       0x2a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.make_alarm_id
-                0x10000786        0x6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x1000088a        0x6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.sleep_until_callback
-                0x1000078c       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000890       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x100007c8      0x2d4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x100008cc      0x2d4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.ta_enable_irq_handler
-                0x10000a9c       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000ba0       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_post_alloc_init
-                0x10000ad4       0x7c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000bd8       0x7c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_get_default
-                0x10000b50       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000b50                alarm_pool_get_default
+                0x10000c54       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000c54                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10000b78       0xc0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000b78                alarm_pool_add_alarm_at_force_in_context
+                0x10000c7c       0xc0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000c7c                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_add_alarm_at
-                0x10000c38       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000c38                alarm_pool_add_alarm_at
+                0x10000d3c       0x38 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000d3c                alarm_pool_add_alarm_at
  .text.add_alarm_at
-                0x10000c70       0x26 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000d74       0x26 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_cancel_alarm
-                0x10000c96       0x72 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000c96                alarm_pool_cancel_alarm
+                0x10000d9a       0x72 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000d9a                alarm_pool_cancel_alarm
  .text.cancel_alarm
-                0x10000d08       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000e0c       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .text.sleep_until
-                0x10000d18       0xc4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000d18                sleep_until
+                0x10000e1c       0xc4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000e1c                sleep_until
  .text.sleep_us
-                0x10000ddc       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000ddc                sleep_us
+                0x10000ee0       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000ee0                sleep_us
  .text.sleep_ms
-                0x10000e00       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000e00                sleep_ms
+                0x10000f04       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000f04                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10000e28      0x10c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000e28                best_effort_wfe_or_timeout
+                0x10000f2c      0x10c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10000f2c                best_effort_wfe_or_timeout
  .text.alarm_pool_get_default_timer
-                0x10000f34        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000f34                alarm_pool_get_default_timer
+                0x10001038        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10001038                alarm_pool_get_default_timer
  .text.runtime_init_default_alarm_pool
-                0x10000f3c       0x34 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10000f3c                runtime_init_default_alarm_pool
+                0x10001040       0x34 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10001040                runtime_init_default_alarm_pool
  .text.timer_hardware_alarm_claim
-                0x10000f70       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000f70                timer_hardware_alarm_claim
+                0x10001074       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001074                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10000f94       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000f94                timer_time_us_64
+                0x10001098       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001098                timer_time_us_64
  .text.timer_busy_wait_until
-                0x10000fa4       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000fa4                timer_busy_wait_until
+                0x100010a8       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100010a8                timer_busy_wait_until
  .text.timer_busy_wait_us
-                0x10000fbe       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000fbe                timer_busy_wait_us
- *fill*         0x10000fe6        0x2 
+                0x100010c2       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100010c2                timer_busy_wait_us
+ *fill*         0x100010ea        0x2 
  .text.time_us_64
-                0x10000fe8       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000fe8                time_us_64
+                0x100010ec       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100010ec                time_us_64
  .text.busy_wait_us
-                0x10000ff8       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10000ff8                busy_wait_us
+                0x100010fc       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100010fc                busy_wait_us
  .text.busy_wait_until
-                0x1000100c       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x1000100c                busy_wait_until
+                0x10001110       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001110                busy_wait_until
  .text.uart_unreset
-                0x10001020       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x10001124       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .text.uart_disable_before_lcr_write
-                0x1000104c       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x10001150       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .text.uart_write_lcr_bits_masked
-                0x1000108c       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x10001190       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .text.uart_set_baudrate
-                0x100010a8       0x52 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-                0x100010a8                uart_set_baudrate
- *fill*         0x100010fa        0x2 
+                0x100011ac       0x52 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x100011ac                uart_set_baudrate
+ *fill*         0x100011fe        0x2 
  .text.uart_set_translate_crlf
-                0x100010fc       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-                0x100010fc                uart_set_translate_crlf
+                0x10001200       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x10001200                uart_set_translate_crlf
  .text.uart_init
-                0x10001120       0x5c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-                0x10001120                uart_init
+                0x10001224       0x5c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x10001224                uart_init
  .text.clock_configure_internal
-                0x1000117c       0xb8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001280       0xb8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .text.clock_configure_undivided
-                0x10001234       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001234                clock_configure_undivided
- *fill*         0x10001246        0x2 
+                0x10001338       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001338                clock_configure_undivided
+ *fill*         0x1000134a        0x2 
  .text.clock_get_hz
-                0x10001248        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001248                clock_get_hz
+                0x1000134c        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x1000134c                clock_get_hz
  .text.pll_init
-                0x10001254      0x108 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x10001254                pll_init
+                0x10001358      0x108 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x10001358                pll_init
  .text.tick_start
-                0x1000135c       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x1000135c                tick_start
+                0x10001460       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x10001460                tick_start
  .text.rom_func_lookup
-                0x10001378       0x1e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x10001378                rom_func_lookup
- *fill*         0x10001396        0x2 
+                0x1000147c       0x1e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x1000147c                rom_func_lookup
+ *fill*         0x1000149a        0x2 
  .text.runtime_init_bootrom_locking_enable
-                0x10001398       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
-                0x10001398                runtime_init_bootrom_locking_enable
+                0x1000149c       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+                0x1000149c                runtime_init_bootrom_locking_enable
  .text.boot_locks_reset
-                0x100013ac       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-                0x100013ac                boot_locks_reset
+                0x100014b0       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+                0x100014b0                boot_locks_reset
  .text.runtime_init_boot_locks_reset
-                0x100013cc        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-                0x100013cc                runtime_init_boot_locks_reset
+                0x100014d0        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+                0x100014d0                runtime_init_boot_locks_reset
  .text.xosc_init
-                0x100013d4       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x100013d4                xosc_init
+                0x100014d8       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x100014d8                xosc_init
  .text.runtime_run_initializers_from
-                0x100013fc       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001500       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.first_per_core_initializer
-                0x10001414        0x2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- *fill*         0x10001416        0x2 
+                0x10001518        0x2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ *fill*         0x1000151a        0x2 
  .text.runtime_run_initializers
-                0x10001418       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001418                runtime_run_initializers
+                0x1000151c       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x1000151c                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x10001428       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001428                runtime_init_early_resets
+                0x1000152c       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000152c                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10001454       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001454                runtime_init_usb_power_down
+                0x10001558       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001558                runtime_init_usb_power_down
  .text.runtime_init_per_core_enable_coprocessors
-                0x10001474       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001474                runtime_init_per_core_enable_coprocessors
+                0x10001578       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001578                runtime_init_per_core_enable_coprocessors
  .text.runtime_init_post_clock_resets
-                0x10001490       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001490                runtime_init_post_clock_resets
+                0x10001594       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001594                runtime_init_post_clock_resets
  .text.runtime_init_bootrom_reset
-                0x100014b0       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100014b0                runtime_init_bootrom_reset
+                0x100015b4       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100015b4                runtime_init_bootrom_reset
  .text.runtime_init_per_core_bootrom_reset
-                0x100014c2       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100014c2                runtime_init_per_core_bootrom_reset
+                0x100015c6       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100015c6                runtime_init_per_core_bootrom_reset
  .text.runtime_init_spin_locks_reset
-                0x100014d4        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100014d4                runtime_init_spin_locks_reset
+                0x100015d8        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100015d8                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x100014dc       0x48 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100014dc                runtime_init_install_ram_vector_table
+                0x100015e0       0x48 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100015e0                runtime_init_install_ram_vector_table
  .text.start_all_ticks
-                0x10001524       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10001628       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .text.runtime_init_clocks
-                0x1000154c       0xc4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x1000154c                runtime_init_clocks
+                0x10001650       0xc4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10001650                runtime_init_clocks
  .text.__rp2350_dcp_engaged_state_save_restore
-                0x10001610       0x3a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
- *fill*         0x1000164a        0x2 
+                0x10001714       0x3a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+ *fill*         0x1000174e        0x2 
  .text.__wrap___aeabi_dadd
-                0x1000164c       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x10001654                __wrap___aeabi_dadd
+                0x10001750       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x10001758                __wrap___aeabi_dadd
  .text.__wrap___aeabi_dsub
-                0x10001674       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x1000167c                __wrap___aeabi_dsub
+                0x10001778       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x10001780                __wrap___aeabi_dsub
  .text.__wrap___aeabi_dmul
-                0x1000169c       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x100016a4                __wrap___aeabi_dmul
+                0x100017a0       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x100017a8                __wrap___aeabi_dmul
  .text.__wrap___aeabi_ddiv
-                0x100016e8       0x9c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x100016f0                __wrap___aeabi_ddiv
+                0x100017ec       0x9c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x100017f4                __wrap___aeabi_ddiv
  .text.__wrap___aeabi_i2d
-                0x10001784       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x1000178c                __wrap___aeabi_i2d
-                0x1000178c                int2double
+                0x10001888       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x10001890                __wrap___aeabi_i2d
+                0x10001890                int2double
  .text.__wrap___aeabi_ui2d
-                0x100017a8       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x100017b0                __wrap___aeabi_ui2d
-                0x100017b0                uint2double
+                0x100018ac       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x100018b4                __wrap___aeabi_ui2d
+                0x100018b4                uint2double
  .text.__wrap___aeabi_d2iz
-                0x100017cc       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x100017d4                __wrap___aeabi_d2iz
-                0x100017d4                double2int_z
+                0x100018d0       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x100018d8                __wrap___aeabi_d2iz
+                0x100018d8                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x100017f0       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x100017f8                double2uint_z
-                0x100017f8                double2uint
-                0x100017f8                __wrap___aeabi_d2uiz
+                0x100018f4       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x100018fc                double2uint_z
+                0x100018fc                double2uint
+                0x100018fc                __wrap___aeabi_d2uiz
  .text.__wrap___aeabi_dcmpun
-                0x10001814       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x1000181c                __wrap___aeabi_dcmpun
+                0x10001918       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x10001920                __wrap___aeabi_dcmpun
  .text.__wrap___aeabi_dcmplt
-                0x10001838       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x10001840                __wrap___aeabi_dcmplt
+                0x1000193c       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x10001944                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10001860       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x10001868                __wrap___aeabi_dcmple
+                0x10001964       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x1000196c                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10001888       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x10001890                __wrap___aeabi_dcmpge
+                0x1000198c       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x10001994                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x100018b0       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-                0x100018b8                __wrap___aeabi_dcmpgt
+                0x100019b4       0x28 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x100019bc                __wrap___aeabi_dcmpgt
  .text._out_buffer
-                0x100018d8        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100019dc        0x8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_null
-                0x100018e0        0x2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100019e4        0x2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_fct
-                0x100018e2        0xe CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._atoi    0x100018f0       0x26 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100019e6        0xe CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .text._atoi    0x100019f4       0x26 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._out_rev
-                0x10001916       0x7e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001a1a       0x7e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._ntoa_format
-                0x10001994      0x136 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001a98      0x136 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._ntoa_long
-                0x10001aca       0x94 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001bce       0x94 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._ntoa_long_long
-                0x10001b5e       0xc2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .text._etoa    0x10001c20      0x41c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- *fill*         0x1000203c        0x4 
- .text._ftoa    0x10002040      0x398 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001c62       0xc2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ *fill*         0x10001d24        0x4 
+ .text._etoa    0x10001d28      0x41c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ *fill*         0x10002144        0x4 
+ .text._ftoa    0x10002148      0x398 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text._vsnprintf
-                0x100023d8      0x6d0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x100024e0      0x6d0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.__wrap_sprintf
-                0x10002aa8       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10002aa8                __wrap_sprintf
+                0x10002bb0       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10002bb0                __wrap_sprintf
  .text.vfctprintf
-                0x10002ad4       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10002ad4                vfctprintf
- .text._exit    0x10002af8        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10002af8                _exit
- .text.exit     0x10002afc        0x6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10002afc                exit
- *fill*         0x10002b02        0x2 
+                0x10002bdc       0x24 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10002bdc                vfctprintf
+ .text._exit    0x10002c00        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10002c00                _exit
+ .text.exit     0x10002c04        0x6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10002c04                exit
+ *fill*         0x10002c0a        0x2 
  .text.__assert_func
-                0x10002b04       0x34 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10002b04                __assert_func
+                0x10002c0c       0x34 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10002c0c                __assert_func
  .text.runtime_init
-                0x10002b38       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10002b38                runtime_init
+                0x10002c40       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10002c40                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10002b64        0xe CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- *fill*         0x10002b72        0x2 
+                0x10002c6c        0xe CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ *fill*         0x10002c7a        0x2 
  .text.stdio_out_chars_crlf
-                0x10002b74       0x80 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002c7c       0x80 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_stack_buffer_flush
-                0x10002bf4       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002cfc       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_buffered_printer
-                0x10002c34       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002d3c       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdout_serialize_begin
-                0x10002c54       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002c54                stdout_serialize_begin
+                0x10002d5c       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002d5c                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x10002c80       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002c80                stdout_serialize_end
+                0x10002d88       0x10 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002d88                stdout_serialize_end
  .text.stdio_put_string
-                0x10002c90       0x8c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002c90                stdio_put_string
+                0x10002d98       0x8c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002d98                stdio_put_string
  .text.stdio_flush
-                0x10002d1c       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002d1c                stdio_flush
+                0x10002e24       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002e24                stdio_flush
  .text.__wrap_puts
-                0x10002d38       0x1e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002d38                __wrap_puts
-                0x10002d38                stdio_puts
- *fill*         0x10002d56        0x2 
+                0x10002e40       0x1e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002e40                __wrap_puts
+                0x10002e40                stdio_puts
+ *fill*         0x10002e5e        0x2 
  .text.__wrap_vprintf
-                0x10002d58       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002d58                __wrap_vprintf
-                0x10002d58                stdio_vprintf
+                0x10002e60       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002e60                __wrap_vprintf
+                0x10002e60                stdio_vprintf
  .text.__wrap_printf
-                0x10002d94       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002d94                stdio_printf
-                0x10002d94                __wrap_printf
+                0x10002e9c       0x1c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002e9c                stdio_printf
+                0x10002e9c                __wrap_printf
  .text.i2c_unreset
-                0x10002db0       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x10002eb8       0x2c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
  .text.i2c_write_blocking_internal
-                0x10002ddc      0x124 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x10002ee4      0x124 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
  .text.i2c_read_blocking_internal
-                0x10002f00       0xca CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
- *fill*         0x10002fca        0x2 
+                0x10003008       0xca CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+ *fill*         0x100030d2        0x2 
  .text.i2c_set_baudrate
-                0x10002fcc       0xc8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
-                0x10002fcc                i2c_set_baudrate
+                0x100030d4       0xc8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x100030d4                i2c_set_baudrate
  .text.i2c_init
-                0x10003094       0x54 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
-                0x10003094                i2c_init
+                0x1000319c       0x54 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x1000319c                i2c_init
  .text.i2c_write_blocking
-                0x100030e8       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
-                0x100030e8                i2c_write_blocking
+                0x100031f0       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x100031f0                i2c_write_blocking
  .text.i2c_read_blocking
-                0x10003100       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
-                0x10003100                i2c_read_blocking
- .text          0x10003118       0xec /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
-                0x10003118                memcpy
- .text          0x10003204        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
-                0x10003204                atexit
- .text          0x10003210       0x5c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
-                0x10003210                strlen
- .text          0x1000326c       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
-                0x1000326c                __libc_fini_array
- .text          0x10003294       0x64 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
-                0x10003294                __register_exitproc
- .text.startup  0x100032f8       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+                0x10003208       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x10003208                i2c_read_blocking
+ .text          0x10003220       0xec /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
+                0x10003220                memcpy
+ .text          0x1000330c        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
+                0x1000330c                atexit
+ .text          0x10003318       0x5c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+                0x10003318                strlen
+ .text          0x10003374       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
+                0x10003374                __libc_fini_array
+ .text          0x1000339c       0x64 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
+                0x1000339c                __register_exitproc
+ .text.startup  0x10003400       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
  *(.fini)
- .fini          0x1000330c        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crti.o
-                0x1000330c                _fini
- .fini.__stub   0x10003310       0x20 linker stubs
+ .fini          0x10003414        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crti.o
+                0x10003414                _fini
+ .fini.__stub   0x10003418       0x20 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3245,210 +3246,213 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10003330                        . = ALIGN (0x4)
-                0x10003330                        PROVIDE (__preinit_array_start = .)
+                0x10003438                        . = ALIGN (0x4)
+                0x10003438                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00050
-                0x10003330        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003330                __pre_init_runtime_init_bootrom_reset
+                0x10003438        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003438                __pre_init_runtime_init_bootrom_reset
  .preinit_array.00100
-                0x10003334        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003334                __pre_init_runtime_init_early_resets
+                0x1000343c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000343c                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x10003338        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003338                __pre_init_runtime_init_usb_power_down
+                0x10003440        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003440                __pre_init_runtime_init_usb_power_down
  .preinit_array.00500
-                0x1000333c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x1000333c                __pre_init_runtime_init_clocks
+                0x10003444        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003444                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x10003340        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003340                __pre_init_runtime_init_post_clock_resets
+                0x10003448        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003448                __pre_init_runtime_init_post_clock_resets
  .preinit_array.01000
-                0x10003344        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-                0x10003344                __pre_init_runtime_init_boot_locks_reset
+                0x1000344c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+                0x1000344c                __pre_init_runtime_init_boot_locks_reset
  .preinit_array.01000
-                0x10003348        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003348                __pre_init_runtime_init_spin_locks_reset
+                0x10003450        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003450                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01010
-                0x1000334c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
-                0x1000334c                __pre_init_runtime_init_bootrom_locking_enable
+                0x10003454        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+                0x10003454                __pre_init_runtime_init_bootrom_locking_enable
  .preinit_array.01100
-                0x10003350        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10003350                __pre_init_runtime_init_mutex
+                0x10003458        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10003458                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x10003354        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003354                __pre_init_runtime_init_install_ram_vector_table
+                0x1000345c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000345c                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x10003358        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
-                0x10003358                __pre_init_runtime_init_default_alarm_pool
+                0x10003460        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x10003460                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x1000335c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x1000335c                __pre_init_first_per_core_initializer
+                0x10003464        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10003464                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.00051
-                0x10003360        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003360                __pre_init_runtime_init_per_core_bootrom_reset
+                0x10003468        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10003468                __pre_init_runtime_init_per_core_bootrom_reset
  .preinit_array.ZZZZZ.00200
-                0x10003364        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10003364                __pre_init_runtime_init_per_core_enable_coprocessors
+                0x1000346c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000346c                __pre_init_runtime_init_per_core_enable_coprocessors
  .preinit_array.ZZZZZ.01000
-                0x10003368        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x10003368                __pre_init_spinlock_set_extexclall
+                0x10003470        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x10003470                __pre_init_spinlock_set_extexclall
  .preinit_array.ZZZZZ.01200
-                0x1000336c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000336c                __pre_init_runtime_init_per_core_irq_priorities
+                0x10003474        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10003474                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x10003370                        PROVIDE (__preinit_array_end = .)
-                0x10003370                        . = ALIGN (0x4)
-                0x10003370                        PROVIDE (__init_array_start = .)
+                0x10003478                        PROVIDE (__preinit_array_end = .)
+                0x10003478                        . = ALIGN (0x4)
+                0x10003478                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x10003370        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+                0x10003478        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
  *(.init_array)
- .init_array    0x10003374        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
-                0x10003378                        PROVIDE (__init_array_end = .)
-                0x10003378                        . = ALIGN (0x4)
-                0x10003378                        PROVIDE (__fini_array_start = .)
+ .init_array    0x1000347c        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
+                0x10003480                        PROVIDE (__init_array_end = .)
+                0x10003480                        . = ALIGN (0x4)
+                0x10003480                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x10003378                        PROVIDE (__fini_array_end = .)
+                0x10003480                        PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x10003378        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
-                0x10003378                        . = ALIGN (0x4)
+ .eh_frame      0x10003480        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
+                0x10003480                        . = ALIGN (0x4)
 
-.glue_7         0x10003378        0x0
- .glue_7        0x10003378        0x0 linker stubs
+.glue_7         0x10003480        0x0
+ .glue_7        0x10003480        0x0 linker stubs
 
-.glue_7t        0x10003378        0x0
- .glue_7t       0x10003378        0x0 linker stubs
+.glue_7t        0x10003480        0x0
+ .glue_7t       0x10003480        0x0 linker stubs
 
-.vfp11_veneer   0x10003378        0x0
- .vfp11_veneer  0x10003378        0x0 linker stubs
+.vfp11_veneer   0x10003480        0x0
+ .vfp11_veneer  0x10003480        0x0 linker stubs
 
-.v4_bx          0x10003378        0x0
- .v4_bx         0x10003378        0x0 linker stubs
+.v4_bx          0x10003480        0x0
+ .v4_bx         0x10003480        0x0 linker stubs
 
-.iplt           0x10003378        0x0
- .iplt          0x10003378        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
+.iplt           0x10003480        0x0
+ .iplt          0x10003480        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
 
-.boot2          0x10003378        0x0
-                0x10003378                        __boot2_start__ = .
+.boot2          0x10003480        0x0
+                0x10003480                        __boot2_start__ = .
  *(.boot2)
-                0x10003378                        __boot2_end__ = .
+                0x10003480                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) <= 0x100), ERROR: Pico second stage bootloader must be no more than 256 bytes in size)
 
-.rodata         0x10003378      0x5c8
+.rodata         0x10003480      0x618
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
+ .rodata.ak09918_init.str1.4
+                0x10003480      0x4c7 CMakeFiles/DiskSat.dir/main.c.o
+                                 0x70 (size before relaxing)
  .rodata.main.str1.4
-                0x10003378      0x47b CMakeFiles/DiskSat.dir/main.c.o
-                                 0x4a (size before relaxing)
+                0x10003947       0x23 CMakeFiles/DiskSat.dir/main.c.o
  .rodata.panic.str1.4
-                0x100037f3       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10003947       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.resolve_j_16.str1.4
-                0x100037f3       0x4f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10003947       0x4f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .rodata.irq_set_exclusive_handler.str1.4
-                0x100037f3       0x36 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- *fill*         0x100037f3        0x1 
+                0x10003947       0x36 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ *fill*         0x10003947        0x1 
  .rodata.__func__.6
-                0x100037f4       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10003948       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .rodata.runtime_init_mutex.str1.4
-                0x1000380e       0x52 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10003962       0x52 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
  .rodata.str1.4
-                0x1000380e       0x51 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
- *fill*         0x1000380e        0x2 
+                0x10003962       0x51 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+ *fill*         0x10003962        0x2 
  .rodata.__func__.1
-                0x10003810        0xb CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
- *fill*         0x1000381b        0x1 
+                0x10003964        0xb CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+ *fill*         0x1000396f        0x1 
  .rodata.__func__.3
-                0x1000381c       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10003970       0x18 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
  .rodata.__func__.6
-                0x10003834       0x13 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x10003988       0x13 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
  .rodata.alarm_pool_irq_handler.str1.4
-                0x10003847       0x5d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x1000399b       0x5d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .rodata.alarm_pool_get_default.str1.4
-                0x10003847       0x21 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x1000399b       0x21 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .rodata.sleep_until.str1.4
-                0x10003847       0x4d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
- *fill*         0x10003847        0x1 
+                0x1000399b       0x4d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+ *fill*         0x1000399b        0x1 
  .rodata.__func__.1
-                0x10003848       0x17 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
- *fill*         0x1000385f        0x1 
+                0x1000399c       0x17 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+ *fill*         0x100039b3        0x1 
  .rodata.__func__.2
-                0x10003860       0x17 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x100039b4       0x17 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x10003877       0x22 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100039cb       0x22 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .rodata.pll_init.str1.4
-                0x10003877      0x10c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- *fill*         0x10003877        0x1 
+                0x100039cb      0x10c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ *fill*         0x100039cb        0x1 
  .rodata.__func__.0
-                0x10003878        0x9 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x100039cc        0x9 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .rodata.str1.4
-                0x10003881       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- *fill*         0x10003881        0x3 
+                0x100039d5       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ *fill*         0x100039d5        0x3 
  .rodata.__bi_84
-                0x10003884        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x100039d8        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x10003890        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x100039e4        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x1000389c        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x100039f0        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x100038a8        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x100039fc        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x100038b4        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003a08        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x100038c0        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003a14        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_26
-                0x100038cc        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003a20        0xc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata._ftoa.str1.4
-                0x100038d8       0x15 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003a2c       0x15 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ *fill*         0x10003a2c        0x4 
  .rodata.pow10.0
-                0x100038d8       0x50 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10003a30       0x50 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .rodata.__assert_func.str1.4
-                0x10003928       0x43 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10003a80       0x43 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .rodata.crlf_str.0
-                0x10003928        0x2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10003a80        0x2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .rodata.i2c_set_baudrate.str1.4
-                0x1000392a       0x57 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
- *fill*         0x1000392a        0x2 
+                0x10003a82       0x57 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+ *fill*         0x10003a82        0x2 
  .rodata.__func__.0
-                0x1000392c       0x11 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x10003a84       0x11 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
  *(.srodata*)
-                0x10003940                        . = ALIGN (0x4)
- *fill*         0x1000393d        0x3 
+                0x10003a98                        . = ALIGN (0x4)
+ *fill*         0x10003a95        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10003940                        . = ALIGN (0x4)
+                0x10003a98                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10003940                        __exidx_start = .
+                0x10003a98                        __exidx_start = .
 
-.ARM.exidx      0x10003940        0x8
+.ARM.exidx      0x10003a98        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x10003940        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
- .ARM.exidx     0x10003948        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x10003a98        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
+ .ARM.exidx     0x10003aa0        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x10003948                        __exidx_end = .
-                0x10003948                        . = ALIGN (0x4)
-                0x10003948                        __binary_info_start = .
+                0x10003aa0                        __exidx_end = .
+                0x10003aa0                        . = ALIGN (0x4)
+                0x10003aa0                        __binary_info_start = .
 
-.binary_info    0x10003948       0x1c
+.binary_info    0x10003aa0       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x10003948        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003aa0        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr78
-                0x1000394c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003aa4        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr54
-                0x10003950        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003aa8        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr48
-                0x10003954        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003aac        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr42
-                0x10003958        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003ab0        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr34
-                0x1000395c        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003ab4        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr26
-                0x10003960        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10003ab8        0x4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
-                0x10003964                        __binary_info_end = .
-                0x10003964                        . = ALIGN (0x4)
+                0x10003abc                        __binary_info_end = .
+                0x10003abc                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000      0x110
@@ -3462,7 +3466,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
                 0x20000110                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x20000110      0x854 load address 0x10003964
+.data           0x20000110      0x854 load address 0x10003abc
                 0x20000110                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3530,23 +3534,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
                 0x20000964                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20000964        0x0 load address 0x100041b8
+                0x20000964        0x0 load address 0x10004310
  .tm_clone_table
                 0x20000964        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
  .tm_clone_table
                 0x20000964        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtend.o
 
-.igot.plt       0x20000964        0x0 load address 0x100041b8
+.igot.plt       0x20000964        0x0 load address 0x10004310
  .igot.plt      0x20000964        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
 
-.tdata          0x20000964        0x0 load address 0x100041b8
+.tdata          0x20000964        0x0 load address 0x10004310
                 0x20000964                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000964                        __tdata_end = .
                 0x20000964                        PROVIDE (__data_end__ = .)
-                0x10003964                        __etext = LOADADDR (.data)
+                0x10003abc                        __etext = LOADADDR (.data)
 
-.tbss           0x20000964        0x0 load address 0x100041b8
+.tbss           0x20000964        0x0 load address 0x10004310
                 0x20000964                        . = ALIGN (0x4)
                 0x20000964                        __bss_start__ = .
                 0x20000964                        __tls_base = .
@@ -3554,7 +3558,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
  *(.tcommon)
                 0x20000964                        __tls_end = .
 
-.bss            0x20000968      0x3ac load address 0x100041b8
+.bss            0x20000968      0x3ac load address 0x10004310
                 0x20000968                        . = ALIGN (0x4)
                 0x20000968                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3586,26 +3590,26 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
                 0x20000d14                        . = ALIGN (0x4)
                 0x20000d14                        __bss_end__ = .
 
-.heap           0x20000d14      0x800 load address 0x100041b8
+.heap           0x20000d14      0x800 load address 0x10004310
                 0x20000d14                        __end__ = .
                 0x20000d14                        end = __end__
  *(.heap*)
  .heap          0x20000d14      0x800 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20080000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20080000        0x0 load address 0x100041b8
+.scratch_x      0x20080000        0x0 load address 0x10004310
                 0x20080000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20080000                        . = ALIGN (0x4)
                 0x20080000                        __scratch_x_end__ = .
-                0x100041b8                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10004310                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20081000        0x0 load address 0x100041b8
+.scratch_y      0x20081000        0x0 load address 0x10004310
                 0x20081000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20081000                        . = ALIGN (0x4)
                 0x20081000                        __scratch_y_end__ = .
-                0x100041b8                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10004310                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -3614,11 +3618,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.mai
  *(.stack*)
  .stack         0x20081000      0x800 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
-.flash_end      0x100041b8       0x14
+.flash_end      0x10004310       0x14
  *(.embedded_end_block*)
  .embedded_end_block
-                0x100041b8       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
-                0x100041cc                        PROVIDE (__flash_binary_end = .)
+                0x10004310       0x14 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+                0x10004324                        PROVIDE (__flash_binary_end = .)
                 0x20080000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20081000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20082000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3711,8 +3715,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtn.o
 OUTPUT(DiskSat.elf elf32-littlearm)
 LOAD linker stubs
 
-.rel.dyn        0x100041cc        0x0
- .rel.iplt      0x100041cc        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
+.rel.dyn        0x10004324        0x0
+ .rel.iplt      0x10004324        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
 
 .ARM.attributes
                 0x00000000       0x34
@@ -3839,150 +3843,150 @@ LOAD linker stubs
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/crtend.o
 
-.debug_info     0x00000000    0x1bf9d
- .debug_info    0x00000000      0xcb6 CMakeFiles/DiskSat.dir/main.c.o
- .debug_info    0x00000cb6     0x1c2b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_info    0x000028e1      0x1b3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_info    0x00002a94      0x72d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_info    0x000031c1      0x465 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_info    0x00003626     0x1506 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_info    0x00004b2c     0x23dd CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_info    0x00006f09      0x1c3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_info    0x000070cc     0x1ecf CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_info    0x00008f9b     0x381f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
- .debug_info    0x0000c7ba     0x1e69 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_info    0x0000e623     0x13b6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_info    0x0000f9d9     0x163f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_info    0x00011018      0x664 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_info    0x0001167c      0x2be CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_info    0x0001193a      0xfff CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_info    0x00012939      0x1bd CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
- .debug_info    0x00012af6      0x31c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
- .debug_info    0x00012e12      0x19d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_info    0x00012faf      0x1b0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_info    0x0001315f     0x1c45 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_info    0x00014da4      0x797 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_info    0x0001553b       0x23 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
- .debug_info    0x0001555e      0x288 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_info    0x000157e6     0x1936 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_info    0x0001711c       0x23 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_info    0x0001713f      0xcab CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_info    0x00017dea     0x15e4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_info    0x000193ce     0x1c21 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
- .debug_info    0x0001afef       0xd3 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x0001b0c2       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x0001b0e6      0x6f5 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
- .debug_info    0x0001b7db       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x0001b817       0x33 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
- .debug_info    0x0001b84a      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
- .debug_info    0x0001b968       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
- .debug_info    0x0001ba25       0xf7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
- .debug_info    0x0001bb1c      0x1fd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
- .debug_info    0x0001bd19      0x284 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+.debug_info     0x00000000    0x1c25b
+ .debug_info    0x00000000      0xf74 CMakeFiles/DiskSat.dir/main.c.o
+ .debug_info    0x00000f74     0x1c2b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_info    0x00002b9f      0x1b3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_info    0x00002d52      0x72d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_info    0x0000347f      0x465 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_info    0x000038e4     0x1506 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_info    0x00004dea     0x23dd CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_info    0x000071c7      0x1c3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_info    0x0000738a     0x1ecf CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_info    0x00009259     0x381f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+ .debug_info    0x0000ca78     0x1e69 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_info    0x0000e8e1     0x13b6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_info    0x0000fc97     0x163f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_info    0x000112d6      0x664 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_info    0x0001193a      0x2be CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_info    0x00011bf8      0xfff CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_info    0x00012bf7      0x1bd CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+ .debug_info    0x00012db4      0x31c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+ .debug_info    0x000130d0      0x19d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_info    0x0001326d      0x1b0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_info    0x0001341d     0x1c45 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_info    0x00015062      0x797 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_info    0x000157f9       0x23 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+ .debug_info    0x0001581c      0x288 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_info    0x00015aa4     0x1936 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_info    0x000173da       0x23 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_info    0x000173fd      0xcab CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_info    0x000180a8     0x15e4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_info    0x0001968c     0x1c21 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+ .debug_info    0x0001b2ad       0xd3 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0001b380       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0001b3a4      0x6f5 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x0001ba99       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0001bad5       0x33 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
+ .debug_info    0x0001bb08      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
+ .debug_info    0x0001bc26       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+ .debug_info    0x0001bce3       0xf7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
+ .debug_info    0x0001bdda      0x1fd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
+ .debug_info    0x0001bfd7      0x284 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
-.debug_abbrev   0x00000000     0x5a3a
- .debug_abbrev  0x00000000      0x3c0 CMakeFiles/DiskSat.dir/main.c.o
- .debug_abbrev  0x000003c0      0x487 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_abbrev  0x00000847      0x12d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_abbrev  0x00000974      0x2c8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_abbrev  0x00000c3c      0x1f8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_abbrev  0x00000e34      0x2a1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_abbrev  0x000010d5      0x5c1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_abbrev  0x00001696      0x130 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_abbrev  0x000017c6      0x437 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_abbrev  0x00001bfd      0x632 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
- .debug_abbrev  0x0000222f      0x4b4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_abbrev  0x000026e3      0x335 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_abbrev  0x00002a18      0x45c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_abbrev  0x00002e74      0x1f8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_abbrev  0x0000306c      0x153 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_abbrev  0x000031bf      0x480 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_abbrev  0x0000363f      0x12b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
- .debug_abbrev  0x0000376a      0x200 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
- .debug_abbrev  0x0000396a      0x10b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_abbrev  0x00003a75      0x149 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_abbrev  0x00003bbe      0x2f9 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_abbrev  0x00003eb7      0x2a8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_abbrev  0x0000415f       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
- .debug_abbrev  0x00004171       0xb8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_abbrev  0x00004229      0x38e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_abbrev  0x000045b7       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_abbrev  0x000045c9      0x35f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_abbrev  0x00004928      0x527 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_abbrev  0x00004e4f      0x4be CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
- .debug_abbrev  0x0000530d       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x00005335       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
- .debug_abbrev  0x00005349      0x16a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
- .debug_abbrev  0x000054b3       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x000054d9       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
- .debug_abbrev  0x00005501       0xc1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
- .debug_abbrev  0x000055c2       0x78 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
- .debug_abbrev  0x0000563a       0xcc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
- .debug_abbrev  0x00005706      0x157 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
- .debug_abbrev  0x0000585d      0x1dd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+.debug_abbrev   0x00000000     0x5a4a
+ .debug_abbrev  0x00000000      0x3d0 CMakeFiles/DiskSat.dir/main.c.o
+ .debug_abbrev  0x000003d0      0x487 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_abbrev  0x00000857      0x12d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_abbrev  0x00000984      0x2c8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_abbrev  0x00000c4c      0x1f8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_abbrev  0x00000e44      0x2a1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_abbrev  0x000010e5      0x5c1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_abbrev  0x000016a6      0x130 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_abbrev  0x000017d6      0x437 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_abbrev  0x00001c0d      0x632 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+ .debug_abbrev  0x0000223f      0x4b4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_abbrev  0x000026f3      0x335 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_abbrev  0x00002a28      0x45c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_abbrev  0x00002e84      0x1f8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_abbrev  0x0000307c      0x153 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_abbrev  0x000031cf      0x480 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_abbrev  0x0000364f      0x12b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+ .debug_abbrev  0x0000377a      0x200 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+ .debug_abbrev  0x0000397a      0x10b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_abbrev  0x00003a85      0x149 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_abbrev  0x00003bce      0x2f9 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_abbrev  0x00003ec7      0x2a8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_abbrev  0x0000416f       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+ .debug_abbrev  0x00004181       0xb8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_abbrev  0x00004239      0x38e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_abbrev  0x000045c7       0x12 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_abbrev  0x000045d9      0x35f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_abbrev  0x00004938      0x527 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_abbrev  0x00004e5f      0x4be CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+ .debug_abbrev  0x0000531d       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00005345       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x00005359      0x16a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x000054c3       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x000054e9       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
+ .debug_abbrev  0x00005511       0xc1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
+ .debug_abbrev  0x000055d2       0x78 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+ .debug_abbrev  0x0000564a       0xcc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
+ .debug_abbrev  0x00005716      0x157 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
+ .debug_abbrev  0x0000586d      0x1dd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
 .debug_loclists
-                0x00000000     0xa296
+                0x00000000     0xa2f2
  .debug_loclists
-                0x00000000      0x295 CMakeFiles/DiskSat.dir/main.c.o
+                0x00000000      0x2f1 CMakeFiles/DiskSat.dir/main.c.o
  .debug_loclists
-                0x00000295      0xc50 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x000002f1      0xc50 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_loclists
-                0x00000ee5      0x268 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x00000f41      0x268 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_loclists
-                0x0000114d       0xe6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x000011a9       0xe6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_loclists
-                0x00001233       0xa3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x0000128f       0xa3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_loclists
-                0x000012d6      0xd9f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x00001332      0xd9f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_loclists
-                0x00002075       0x17 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x000020d1       0x17 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_loclists
-                0x0000208c      0xae1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x000020e8      0xae1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_loclists
-                0x00002b6d     0x1a01 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x00002bc9     0x1a01 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .debug_loclists
-                0x0000456e      0xaf6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x000045ca      0xaf6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_loclists
-                0x00005064      0x61b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x000050c0      0x61b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .debug_loclists
-                0x0000567f      0x886 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x000056db      0x886 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_loclists
-                0x00005f05      0x3d0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x00005f61      0x3d0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_loclists
-                0x000062d5       0x80 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x00006331       0x80 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_loclists
-                0x00006355      0x79d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x000063b1      0x79d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_loclists
-                0x00006af2       0x8c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+                0x00006b4e       0x8c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
  .debug_loclists
-                0x00006b7e       0x48 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x00006bda       0x48 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_loclists
-                0x00006bc6       0x58 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x00006c22       0x58 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_loclists
-                0x00006c1e      0x129 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x00006c7a      0x129 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_loclists
-                0x00006d47       0x64 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x00006da3       0x64 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_loclists
-                0x00006dab     0x1356 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x00006e07     0x1356 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_loclists
-                0x00008101      0x452 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x0000815d      0x452 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_loclists
-                0x00008553      0x687 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x000085af      0x687 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_loclists
-                0x00008bda      0xaff CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x00008c36      0xaff CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
  .debug_loclists
-                0x000096d9      0x93f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+                0x00009735      0x93f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
  .debug_loclists
-                0x0000a018       0x2b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
+                0x0000a074       0x2b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
  .debug_loclists
-                0x0000a043       0x29 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+                0x0000a09f       0x29 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
  .debug_loclists
-                0x0000a06c       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
+                0x0000a0c8       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
  .debug_loclists
-                0x0000a0ae       0xe6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
+                0x0000a10a       0xe6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
  .debug_loclists
-                0x0000a194      0x102 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+                0x0000a1f0      0x102 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
 .debug_aranges  0x00000000      0xe38
  .debug_aranges
@@ -4065,188 +4069,188 @@ LOAD linker stubs
                 0x00000e10       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
 .debug_rnglists
-                0x00000000      0xec2
+                0x00000000      0xec6
  .debug_rnglists
-                0x00000000       0x56 CMakeFiles/DiskSat.dir/main.c.o
+                0x00000000       0x5a CMakeFiles/DiskSat.dir/main.c.o
  .debug_rnglists
-                0x00000056      0x104 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x0000005a      0x104 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_rnglists
-                0x0000015a       0x19 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x0000015e       0x19 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .debug_rnglists
-                0x00000173       0x31 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x00000177       0x31 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_rnglists
-                0x000001a4       0x31 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x000001a8       0x31 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_rnglists
-                0x000001d5       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x000001d9       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_rnglists
-                0x000001f4       0xf6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x000001f8       0xf6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_rnglists
-                0x000002ea       0x13 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x000002ee       0x13 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_rnglists
-                0x000002fd      0x12b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x00000301      0x12b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_rnglists
-                0x00000428      0x20f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+                0x0000042c      0x20f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
  .debug_rnglists
-                0x00000637       0xca CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x0000063b       0xca CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_rnglists
-                0x00000701       0x8b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x00000705       0x8b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .debug_rnglists
-                0x0000078c       0xe7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x00000790       0xe7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_rnglists
-                0x00000873       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x00000877       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_rnglists
-                0x0000088d       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x00000891       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_rnglists
-                0x000008ac       0xbd CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x000008b0       0xbd CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_rnglists
-                0x00000969       0x13 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+                0x0000096d       0x13 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
  .debug_rnglists
-                0x0000097c       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+                0x00000980       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
  .debug_rnglists
-                0x0000099b       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000099f       0x1f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_rnglists
-                0x000009ba       0x2b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x000009be       0x2b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_rnglists
-                0x000009e5       0x3d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x000009e9       0x3d CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_rnglists
-                0x00000a22       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x00000a26       0x1a CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_rnglists
-                0x00000a3c       0xb7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+                0x00000a40       0xb7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
  .debug_rnglists
-                0x00000af3       0xf0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x00000af7       0xf0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_rnglists
-                0x00000be3       0x1b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+                0x00000be7       0x1b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
  .debug_rnglists
-                0x00000bfe       0x79 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x00000c02       0x79 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_rnglists
-                0x00000c77       0xed CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00000c7b       0xed CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_rnglists
-                0x00000d64       0x9c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+                0x00000d68       0x9c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
  .debug_rnglists
-                0x00000e00       0x75 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+                0x00000e04       0x75 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
  .debug_rnglists
-                0x00000e75       0x13 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+                0x00000e79       0x13 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
  .debug_rnglists
-                0x00000e88       0x3a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+                0x00000e8c       0x3a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
-.debug_line     0x00000000     0xe6d8
- .debug_line    0x00000000      0x5eb CMakeFiles/DiskSat.dir/main.c.o
- .debug_line    0x000005eb      0xcde CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x000012c9      0x17b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x00001444      0x482 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x000018c6      0x2f3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x00001bb9      0x2e8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x00001ea1     0x10cc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x00002f6d      0x1b1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x0000311e      0xf03 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x00004021     0x1ce3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x00005d04      0xe95 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x00006b99      0x8a1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_line    0x0000743a      0xacc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x00007f06      0x466 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000836c      0x24b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x000085b7      0x9f3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x00008faa      0x2c7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
- .debug_line    0x00009271      0x2f2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
- .debug_line    0x00009563      0x297 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x000097fa      0x1d7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x000099d1      0x57e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x00009f4f      0x45f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x0000a3ae      0x28f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
- .debug_line    0x0000a63d      0x14e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x0000a78b     0x1179 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x0000b904       0x9e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x0000b9a2      0x735 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x0000c0d7      0xba4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x0000cc7b      0xbdf CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
- .debug_line    0x0000d85a      0x16f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x0000d9c9       0x4e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x0000da17      0x55e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
- .debug_line    0x0000df75       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000dfbf       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
- .debug_line    0x0000e07c       0xc3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
- .debug_line    0x0000e13f       0xf4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
- .debug_line    0x0000e233       0xd2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
- .debug_line    0x0000e305      0x154 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
- .debug_line    0x0000e459      0x27f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+.debug_line     0x00000000     0xe73a
+ .debug_line    0x00000000      0x64d CMakeFiles/DiskSat.dir/main.c.o
+ .debug_line    0x0000064d      0xcde CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x0000132b      0x17b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x000014a6      0x482 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x00001928      0x2f3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x00001c1b      0x2e8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x00001f03     0x10cc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x00002fcf      0x1b1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00003180      0xf03 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x00004083     0x1ce3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x00005d66      0xe95 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x00006bfb      0x8a1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_line    0x0000749c      0xacc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x00007f68      0x466 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x000083ce      0x24b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x00008619      0x9f3 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000900c      0x2c7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+ .debug_line    0x000092d3      0x2f2 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+ .debug_line    0x000095c5      0x297 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x0000985c      0x1d7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x00009a33      0x57e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x00009fb1      0x45f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x0000a410      0x28f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+ .debug_line    0x0000a69f      0x14e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x0000a7ed     0x1179 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x0000b966       0x9e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x0000ba04      0x735 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x0000c139      0xba4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x0000ccdd      0xbdf CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+ .debug_line    0x0000d8bc      0x16f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000da2b       0x4e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000da79      0x55e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000dfd7       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000e021       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
+ .debug_line    0x0000e0de       0xc3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
+ .debug_line    0x0000e1a1       0xf4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+ .debug_line    0x0000e295       0xd2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
+ .debug_line    0x0000e367      0x154 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
+ .debug_line    0x0000e4bb      0x27f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
-.debug_str      0x00000000     0x5f8b
- .debug_str     0x00000000     0x5f8b CMakeFiles/DiskSat.dir/main.c.o
-                                0x650 (size before relaxing)
- .debug_str     0x00005f8b      0xcea CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_str     0x00005f8b      0x1e1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_str     0x00005f8b      0x364 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_str     0x00005f8b      0x301 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_str     0x00005f8b      0xbb5 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_str     0x00005f8b      0xbe4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_str     0x00005f8b      0x203 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_str     0x00005f8b      0x8b0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_str     0x00005f8b     0x12c4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
- .debug_str     0x00005f8b      0xb6e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_str     0x00005f8b      0xe35 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_str     0x00005f8b      0xb67 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_str     0x00005f8b      0x48b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_str     0x00005f8b      0x2aa CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_str     0x00005f8b      0x938 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_str     0x00005f8b      0x292 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
- .debug_str     0x00005f8b      0x27e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
- .debug_str     0x00005f8b      0x215 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_str     0x00005f8b      0x276 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_str     0x00005f8b     0x11ef CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_str     0x00005f8b      0x4b7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_str     0x00005f8b       0x69 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
- .debug_str     0x00005f8b      0x3c6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_str     0x00005f8b      0x42c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_str     0x00005f8b       0x5b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_str     0x00005f8b      0x89f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_str     0x00005f8b      0xf84 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_str     0x00005f8b     0x1231 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
- .debug_str     0x00005f8b      0x15a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
- .debug_str     0x00005f8b       0xa9 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
- .debug_str     0x00005f8b      0x691 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
- .debug_str     0x00005f8b       0xc9 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
- .debug_str     0x00005f8b       0xad /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
- .debug_str     0x00005f8b      0x1df /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
- .debug_str     0x00005f8b      0x1ac /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
- .debug_str     0x00005f8b      0x1d9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
- .debug_str     0x00005f8b      0x24a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
- .debug_str     0x00005f8b      0x26c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+.debug_str      0x00000000     0x5fd2
+ .debug_str     0x00000000     0x5fd2 CMakeFiles/DiskSat.dir/main.c.o
+                                0x697 (size before relaxing)
+ .debug_str     0x00005fd2      0xcea CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_str     0x00005fd2      0x1e1 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_str     0x00005fd2      0x364 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_str     0x00005fd2      0x301 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_str     0x00005fd2      0xbb5 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_str     0x00005fd2      0xbe4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_str     0x00005fd2      0x203 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_str     0x00005fd2      0x8b0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_str     0x00005fd2     0x12c4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+ .debug_str     0x00005fd2      0xb6e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_str     0x00005fd2      0xe35 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_str     0x00005fd2      0xb67 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_str     0x00005fd2      0x48b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_str     0x00005fd2      0x2aa CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_str     0x00005fd2      0x938 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_str     0x00005fd2      0x292 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+ .debug_str     0x00005fd2      0x27e CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+ .debug_str     0x00005fd2      0x215 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_str     0x00005fd2      0x276 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_str     0x00005fd2     0x11ef CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_str     0x00005fd2      0x4b7 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_str     0x00005fd2       0x69 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+ .debug_str     0x00005fd2      0x3c6 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_str     0x00005fd2      0x42c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_str     0x00005fd2       0x5b CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_str     0x00005fd2      0x89f CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_str     0x00005fd2      0xf84 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_str     0x00005fd2     0x1231 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+ .debug_str     0x00005fd2      0x15a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x00005fd2       0xa9 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x00005fd2      0x691 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x00005fd2       0xc9 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x00005fd2       0xad /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
+ .debug_str     0x00005fd2      0x1df /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
+ .debug_str     0x00005fd2      0x1ac /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+ .debug_str     0x00005fd2      0x1d9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
+ .debug_str     0x00005fd2      0x24a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
+ .debug_str     0x00005fd2      0x26c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
-.debug_frame    0x00000000     0x21d0
- .debug_frame   0x00000000       0x84 CMakeFiles/DiskSat.dir/main.c.o
- .debug_frame   0x00000084      0x2e8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_frame   0x0000036c       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_frame   0x000003b8       0x98 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_frame   0x00000450       0xa0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_frame   0x000004f0       0x48 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_frame   0x00000538      0x278 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_frame   0x000007b0       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_frame   0x000007d0      0x1bc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_frame   0x0000098c      0x390 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
- .debug_frame   0x00000d1c      0x2c0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_frame   0x00000fdc      0x108 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_frame   0x000010e4      0x1fc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_frame   0x000012e0       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_frame   0x0000131c       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_frame   0x0000135c      0x1a4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_frame   0x00001500       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
- .debug_frame   0x00001520       0x50 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
- .debug_frame   0x00001570       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_frame   0x000015b0       0x80 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_frame   0x00001630       0xb0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_frame   0x000016e0       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_frame   0x0000172c      0x244 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_frame   0x00001970      0x19c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_frame   0x00001b0c      0x2a8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_frame   0x00001db4      0x210 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
- .debug_frame   0x00001fc4       0xac /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00002070       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000209c       0x38 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x000020d4       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
- .debug_frame   0x000020f4       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
- .debug_frame   0x00002114       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
- .debug_frame   0x00002148       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
- .debug_frame   0x0000217c       0x54 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
+.debug_frame    0x00000000     0x21e0
+ .debug_frame   0x00000000       0x94 CMakeFiles/DiskSat.dir/main.c.o
+ .debug_frame   0x00000094      0x2e8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_frame   0x0000037c       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_frame   0x000003c8       0x98 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_frame   0x00000460       0xa0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_frame   0x00000500       0x48 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_frame   0x00000548      0x278 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_frame   0x000007c0       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_frame   0x000007e0      0x1bc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_frame   0x0000099c      0x390 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/common/pico_time/time.c.o
+ .debug_frame   0x00000d2c      0x2c0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_frame   0x00000fec      0x108 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_frame   0x000010f4      0x1fc CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_frame   0x000012f0       0x3c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_frame   0x0000132c       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_frame   0x0000136c      0x1a4 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_frame   0x00001510       0x20 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+ .debug_frame   0x00001530       0x50 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+ .debug_frame   0x00001580       0x40 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_frame   0x000015c0       0x80 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_frame   0x00001640       0xb0 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_frame   0x000016f0       0x4c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_frame   0x0000173c      0x244 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_frame   0x00001980      0x19c CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_frame   0x00001b1c      0x2a8 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_frame   0x00001dc4      0x210 CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+ .debug_frame   0x00001fd4       0xac /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00002080       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x000020ac       0x38 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000020e4       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-atexit.o)
+ .debug_frame   0x00002104       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-strlen-stub.o)
+ .debug_frame   0x00002124       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-fini.o)
+ .debug_frame   0x00002158       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__atexit.o)
+ .debug_frame   0x0000218c       0x54 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-__call_atexit.o)
 
 .debug_line_str
                 0x00000000      0x1e2

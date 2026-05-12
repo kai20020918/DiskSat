@@ -29,6 +29,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_divider/divider.c.o.d"
   "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
   "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d"
+  "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
+  "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d"
   "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
   "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d"
   "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"

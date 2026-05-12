@@ -567,6 +567,30 @@ home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskSat.dir/build.make CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.o: home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+.PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.o
+
+# target to build an object file
+home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskSat.dir/build.make CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+.PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+
+home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskSat.dir/build.make CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiskSat.dir/build.make CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.o
 
@@ -1475,6 +1499,9 @@ help:
 	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.o"
 	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.o"
+	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.o"
 	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.s"

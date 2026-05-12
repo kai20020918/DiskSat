@@ -134,6 +134,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/pico2/pico-sdk/src/rp2_common/pico_multicore/include"
   "/home/pico2/pico-sdk/src/common/boot_picobin_headers/include"
   "/home/pico2/pico-sdk/src/rp2350/boot_stage2/include"
+  "/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/include"
   )
 
 # The set of dependency files which are needed:
@@ -153,6 +154,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" "gcc" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d"
   "/home/pico2/pico-sdk/src/rp2_common/hardware_divider/divider.c" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_divider/divider.c.o" "gcc" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_divider/divider.c.o.d"
   "/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" "gcc" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d"
+  "/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o" "gcc" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d"
   "/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o" "gcc" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d"
   "/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o" "gcc" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_pll/pll.c.o.d"
   "/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o" "gcc" "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_sync/sync.c.o.d"

@@ -857,6 +857,20 @@ CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pico2/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
+CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/DiskSat.dir/flags.make
+CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: /home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/DiskSat.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pico2/DiskSat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -c /home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+
+CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 # Object files for target DiskSat
 DiskSat_OBJECTS = \
 "CMakeFiles/DiskSat.dir/main.c.o" \
@@ -915,7 +929,8 @@ DiskSat_OBJECTS = \
 "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o" \
 "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o" \
 "CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o" \
-"CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
+"CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o" \
+"CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
 
 # External object files for target DiskSat
 DiskSat_EXTERNAL_OBJECTS =
@@ -977,11 +992,12 @@ DiskSat.elf: CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_crt0
 DiskSat.elf: CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 DiskSat.elf: CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 DiskSat.elf: CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+DiskSat.elf: CMakeFiles/DiskSat.dir/home/pico2/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 DiskSat.elf: CMakeFiles/DiskSat.dir/build.make
 DiskSat.elf: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 DiskSat.elf: /home/pico2/pico-sdk/src/rp2_common/pico_crt0/rp2350/memmap_default.ld
 DiskSat.elf: CMakeFiles/DiskSat.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pico2/DiskSat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Linking CXX executable DiskSat.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pico2/DiskSat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking CXX executable DiskSat.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DiskSat.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h /home/pico2/DiskSat/build/DiskSat.elf > DiskSat.dis
 	/usr/bin/arm-none-eabi-objdump -d /home/pico2/DiskSat/build/DiskSat.elf >> DiskSat.dis

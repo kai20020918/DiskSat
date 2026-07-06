@@ -1,114 +1,118 @@
 #include <stdio.h>
 #include <string.h>
+
 #include "pico/stdlib.h"
-#include "hardware/uart.h"
 #include "hardware/i2c.h"
+#include "hardware/uart.h"
 
-// --- 設定 ---
-#define UART_ID          uart1
-#define BAUD_RATE        115200
-#define UART_TX_PIN      10
-#define UART_RX_PIN      11
+// ICM-42688-P I2C設定
+#define ICM42688_I2C_ADDR      0x68  // AP_ADO = GND の場合[cite: 1]
+#define I2C_PORT               i2c0
+#define PIN_SDA                4     // 環境に合わせて変更してください
+#define PIN_SCL                5     // 環境に合わせて変更してください
 
-#define I2C_PORT         i2c0
-#define I2C_SDA          4
-#define I2C_SCL          5
+// UART1設定 (GPIO10, GPIO11)
+#define UART_PORT              uart1
+#define BAUD_RATE              115200
+#define PIN_UART_TX            10
+#define PIN_UART_RX            11
 
-// AK09918 レジスタ定義
-#define AK09918_ADDR     0x0C  // [cite: 2422]
-#define REG_WIA1         0x00  // Company ID (期待値: 0x48) [cite: 2569, 2593]
-#define REG_WIA2         0x01  // Device ID (期待値: 0x0C) [cite: 2569, 2595]
-#define REG_ST1          0x10  // Status 1 (DRDYチェック用) [cite: 2569, 2600]
-#define REG_HXL          0x11  // X軸データ下位 (ここから6バイトがXYZ) [cite: 2569, 2616]
-#define REG_ST2          0x18  // Status 2 (読み取り終了通知に必須) [cite: 2569, 2632]
-#define REG_CNTL2        0x31  // 動作モード設定 [cite: 2569, 2647]
-#define REG_CNTL3        0x32  // ソフトリセット [cite: 2569, 2664]
+// ICM-42688-P レジスタマップ（Bank 0）[cite: 1]
+#define REG_DEVICE_CONFIG      0x11
+#define REG_PWR_MGMT0          0x4E
+#define REG_WHO_AM_I           0x75
+#define REG_ACCEL_DATA_X1      0x1F
 
-// AK09918 初期化
-void ak09918_init() {
-    uint8_t buf[2];
-    char msg[128];
+// WHO_AM_I の期待値[cite: 1]
+#define WHOAMI_EXPECTED        0x47
 
-    // 1. デバイス確認 (WIA1 & WIA2)
-    uint8_t wia[2];
-    uint8_t reg_wia = REG_WIA1;
-    i2c_write_blocking(I2C_PORT, AK09918_ADDR, &reg_wia, 1, true);
-    i2c_read_blocking(I2C_PORT, AK09918_ADDR, wia, 2, false);
+// UART送信用の文字列バッファ
+char tx_msg[128];
+
+// I2C書き込みヘルパー関数
+void icm42688_write_reg(uint8_t reg, uint8_t val) {
+    uint8_t buf[2] = {reg, val};
+    i2c_write_blocking(I2C_PORT, ICM42688_I2C_ADDR, buf, 2, false);
+}
+
+// I2C読み込みヘルパー関数
+void icm42688_read_regs(uint8_t reg, uint8_t *buf, uint16_t len) {
+    i2c_write_blocking(I2C_PORT, ICM42688_I2C_ADDR, &reg, 1, true);
+    i2c_read_blocking(I2C_PORT, ICM42688_I2C_ADDR, buf, len, false);
+}
+
+// 初期化関数
+bool icm42688_init() {
+    uint8_t who_am_i = 0;
     
-    sprintf(msg, "AK09918 Check: Company=0x%02X, Device=0x%02X\r\n", wia[0], wia[1]);
-    uart_puts(UART_ID, msg);
-
-    if (wia[0] != 0x48 || wia[1] != 0x0C) {
-        uart_puts(UART_ID, "Error: AK09918 not found!\r\n");
+    // デバイス確認[cite: 1]
+    icm42688_read_regs(REG_WHO_AM_I, &who_am_i, 1);
+    if (who_am_i != WHOAMI_EXPECTED) {
+        snprintf(tx_msg, sizeof(tx_msg), "Error: ICM-42688-P not found. Read WHO_AM_I: 0x%02X\r\n", who_am_i);
+        uart_puts(UART_PORT, tx_msg);
+        return false;
     }
 
-    // 2. ソフトリセット [cite: 2031, 2668]
-    buf[0] = REG_CNTL3;
-    buf[1] = 0x01; // SRST = 1
-    i2c_write_blocking(I2C_PORT, AK09918_ADDR, buf, 2, false);
-    sleep_ms(100);
+    // ソフトリセットの実行[cite: 1]
+    icm42688_write_reg(REG_DEVICE_CONFIG, 0x01); // SOFT_RESET_CONFIG = 1[cite: 1]
+    sleep_ms(2); // リセット後1ms以上待つ[cite: 1]
 
-    // 3. 動作モード設定 (継続測定モード4: 100Hz) [cite: 2049, 2654]
-    buf[0] = REG_CNTL2;
-    buf[1] = 0x08; // Continuous measurement mode 4
-    i2c_write_blocking(I2C_PORT, AK09918_ADDR, buf, 2, false);
-    
-    uart_puts(UART_ID, "AK09918 Initialized (100Hz Mode).\r\n");
+    // 加速度・ジャイロを「Low Noise (LN) モード」で有効化[cite: 1]
+    // PWR_MGMT0 (0x4E): [bit3:2] GYRO_MODE = 11 (LN), [bit1:0] ACCEL_MODE = 11 (LN)[cite: 1]
+    icm42688_write_reg(REG_PWR_MGMT0, 0x0F);
+    sleep_ms(50); // 起動安定待ち（ジャイロは最小45ms必要）[cite: 1]
+
+    return true;
 }
 
 int main() {
-    // UART初期化
-    uart_init(UART_ID, BAUD_RATE);
-    gpio_set_function(UART_TX_PIN, UART_FUNCSEL_NUM(UART_ID, UART_TX_PIN));
-    gpio_set_function(UART_RX_PIN, UART_FUNCSEL_NUM(UART_ID, UART_RX_PIN));
+    stdio_init_all();
+    // 1. UART1の初期化（標準stdioの初期化は不要）
+    uart_init(UART_PORT, BAUD_RATE);
+    gpio_set_function(PIN_UART_TX, UART_FUNCSEL_NUM(UART_PORT,PIN_UART_TX));
+    gpio_set_function(PIN_UART_RX, UART_FUNCSEL_NUM(UART_PORT,PIN_UART_RX));
 
-    // I2C初期化 (Fast Mode 400kHz) [cite: 1985]
+    // 2. I2C周辺機能の初期化 (400kHz)[cite: 1]
     i2c_init(I2C_PORT, 400 * 1000);
-    gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-    gpio_pull_up(I2C_SDA);
-    gpio_pull_up(I2C_SCL);
+    gpio_set_function(PIN_SDA, GPIO_FUNC_I2C);
+    gpio_set_function(PIN_SCL, GPIO_FUNC_I2C);
+    gpio_pull_up(PIN_SDA);
+    gpio_pull_up(PIN_SCL);
 
-    ak09918_init();
+    sleep_ms(1000); 
+    uart_puts(UART_PORT, "Initializing ICM-42688-P via UART1...\r\n");
 
-    while (1) {
-        uint8_t status;
-        uint8_t reg_st1 = REG_ST1;
+    if (!icm42688_init()) {
+        while (1) sleep_ms(1000);
+    }
+
+    uart_puts(UART_PORT, "ICM-42688-P Initialized Successfully.\r\n");
+
+    uint8_t data_buf[12];
+    int16_t accel_x, accel_y, accel_z;
+    int16_t gyro_x, gyro_y, gyro_z;
+
+    while (true) {
+        // 加速度X1(0x1F)からジャイロZ0(0x2A)までの12バイトを一括読み込み[cite: 1]
+        icm42688_read_regs(REG_ACCEL_DATA_X1, data_buf, 12);
+
+        // ビッグエンディアン形式のデータを16ビット符号付き整数に結合[cite: 1]
+        accel_x = (int16_t)((data_buf[0] << 8) | data_buf[1]);
+        accel_y = (int16_t)((data_buf[2] << 8) | data_buf[3]);
+        accel_z = (int16_t)((data_buf[4] << 8) | data_buf[5]);
         
-        // Data Ready (DRDY) チェック [cite: 2176, 2603]
-        i2c_write_blocking(I2C_PORT, AK09918_ADDR, &reg_st1, 1, true);
-        i2c_read_blocking(I2C_PORT, AK09918_ADDR, &status, 1, false);
+        gyro_x  = (int16_t)((data_buf[6] << 8) | data_buf[7]);
+        gyro_y  = (int16_t)((data_buf[8] << 8) | data_buf[9]);
+        gyro_z  = (int16_t)((data_buf[10] << 8) | data_buf[11]);
 
-        if (status & 0x01) { // DRDY bit
-            uint8_t raw_data[6];
-            uint8_t reg_hxl = REG_HXL;
+        // 表示文字列を設定（改行コードは一般的なテレタイプ用の \r\n としています）[cite: 1]
+        snprintf(tx_msg, sizeof(tx_msg), 
+                 "Accel: X=%6d  Y=%6d  Z=%6d  |  Gyro: X=%6d  Y=%6d  Z=%6d\r\n",
+                 accel_x, accel_y, accel_z, gyro_x, gyro_y, gyro_z);
 
-            // X, Y, Z各軸のデータを一括読み取り (リトルエンディアン) [cite: 2616, 2619]
-            i2c_write_blocking(I2C_PORT, AK09918_ADDR, &reg_hxl, 1, true);
-            i2c_read_blocking(I2C_PORT, AK09918_ADDR, raw_data, 6, false);
+        // UART1へ送信[cite: 1]
+        uart_puts(UART_PORT, tx_msg);
 
-            // 重要: データ保護を解除するためにST2レジスタを必ず読む 
-            uint8_t dummy_st2;
-            uint8_t reg_st2 = REG_ST2;
-            i2c_write_blocking(I2C_PORT, AK09918_ADDR, &reg_st2, 1, true);
-            i2c_read_blocking(I2C_PORT, AK09918_ADDR, &dummy_st2, 1, false);
-
-            // 16ビットデータに結合 (2の補数) [cite: 2619]
-            int16_t mag_x = (int16_t)(raw_data[1] << 8 | raw_data[0]);
-            int16_t mag_y = (int16_t)(raw_data[3] << 8 | raw_data[2]);
-            int16_t mag_z = (int16_t)(raw_data[5] << 8 | raw_data[4]);
-
-            // 実データ(uT)に変換 (0.15 uT/LSB) 
-            float ut_x = mag_x * 0.15f;
-            float ut_y = mag_y * 0.15f;
-            float ut_z = mag_z * 0.15f;
-
-            char out[128];
-            sprintf(out, "MAG(uT): X=%7.2f Y=%7.2f Z=%7.2f\r\n", ut_x, ut_y, ut_z);
-            uart_puts(UART_ID, out);
-        }
-
-        // 表示の負荷を下げるために少し待機
-        sleep_ms(50);
+        sleep_ms(100);
     }
 }

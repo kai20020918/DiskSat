@@ -17,7 +17,7 @@
             ],
             "svdFile": "${env:HOME}/openocd_config/RP2350.svd",
             "serverArgs": [
-                "-c", "adapter speed 500"
+                "-c", "adapter speed 1000"
             ]
         }
     ]
